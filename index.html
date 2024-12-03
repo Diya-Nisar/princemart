@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Inventory Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Stock Inventory Management</h1>
+    
+    <!-- Product Management Form -->
+    <form id="productForm">
+      <input type="text" id="productName" placeholder="Product Name" required>
+      <input type="number" id="productQuantity" placeholder="Quantity" required>
+      <input type="number" id="productPrice" placeholder="Price" required>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <!-- Inventory Table -->
+    <table id="inventoryTable">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added dynamically -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
